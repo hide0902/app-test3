@@ -1,0 +1,108 @@
+// Place all the styles related to the tops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main2 {
+  margin: auto;
+  &__title {
+    font-size: 25px;
+    text-align: center;
+  }
+  &__box {
+    
+    &__box2 {
+      display: flex;
+      background-color: #f5f5dc;
+      margin: auto;
+      width: 1100px;
+      height: 320px;
+      margin-bottom: 20px;
+      &__font{
+        margin: 15px;
+        width: 150px;
+        img {
+          width: 150px;
+          height: auto;
+        }
+      }
+      &__list {
+
+        &__title {
+          font-size: 30px;
+          margin: 15px;
+        }
+        
+        &__show {
+            display: flex;
+            margin: 30px 15px;
+            font-size: 20px;
+          &__street {
+            
+            padding-right: 30px;
+          }
+          &__station {
+            
+            padding-right: 30px;
+          }
+          &__age {
+            
+            
+          }
+        }
+        &__room-box {
+          // display: flex;
+          background-color: white;
+          height: 150px;
+          width: 900px;
+          overflow: scroll;
+          
+          &__show {
+            display: flex;
+            font-size: 15px;
+            &__image {
+              height: 65px;
+              width: 150px;
+              margin: 10px;
+              text-align: center;
+              
+              img {
+                height: 65px;
+                width: auto;
+                
+              }
+  
+            }
+            &__floor {
+              padding: 30px;
+              width: 100px;
+            }
+            &__rent {
+              padding: 12px;
+              width: 120px;
+              &__1 {
+                color: red;
+                font-size: 25px;
+              }
+              &__2 {
+
+              }
+            }
+            &__security {
+              padding: 20px;
+              width: 120px;
+            }
+            &__plan {
+              padding: 20px;
+              // width: 120px;
+            }
+            &__show-button {
+              padding: 30px;
+            
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
