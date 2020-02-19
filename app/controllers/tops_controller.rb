@@ -1,10 +1,5 @@
 class TopsController < ApplicationController
   def index
-    @buildings = Building.all
-  end
-
-  def show
-    @room = Room.find(params[:id])
-    # @station = @room.stations
+    @search = Building.ransack(params[:q])
   end
 end
