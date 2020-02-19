@@ -4,9 +4,9 @@
       = f.label :name_eq, "駅名"
       = f.search_field :stations_station_eq
     .main__2
-      = f.search_field :rooms_rent_gteq, placeholder: "¥ Min"
+      = f.select :rooms_rent_gteq, [ ["3万円以上",3], ["3.5万円以上",3.5], ["4万円以上",4], ["4.5万円以上",4.5], ["5万円以上",5], ["5.5万円以上",5.5], ["6万円以上",6], ["6.5万円以上",6.5], ["7万円以上",7], ["7.5万円以上",7.5] ], :include_blank => '指定なし'
       %p ~
-      = f.search_field :rooms_rent_lteq, placeholder: "¥ Min"
+      = f.select :rooms_rent_lteq, [ ["3万円以下",3], ["3.5万円以下",3.5], ["4万円以下",4], ["4.5万円以下",4.5], ["5万円以下",5], ["5.5万円以下",5.5], ["6万円以下",6], ["6.5万円以下",6.5], ["7万円以下",7], ["7.5万円以下",7.5] ], :include_blank => '指定なし'
     .main__3
       = f.radio_button :city_eq, '', {:checked => true}
       指定なし
@@ -36,10 +36,3 @@
       
     .main__sub
       = f.submit "検索"
-
--# - @lists.each do |list|
--#   = list.name
--#   = list.street
--#   = list.rent
--#   = list.stations[0].station
--#   = image_tag list.images[0].image_sub, height: '150px', width: '220px'
