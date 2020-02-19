@@ -23,12 +23,13 @@
       .main3__box__font-box__font
         = image_tag @room.building.image_top, class: 'main3__box__font-box__font__1'
       .main3__box__font-box__show
-        -# .main3__box__font-box__show__1
-        -#   = image_tag @list.image1, class: 'main3__box__font-box__show__1__2'
-        -# .main3__box__font-box__show__1
-        -#   = image_tag @list.image2, class: 'main3__box__font-box__show__1__2'
-        -# .main3__box__font-box__show__1
-        -#   = image_tag @list.image3, class: 'main3__box__font-box__show__1__2'
+        .main3__box__font-box__show__1
+          = image_tag @room.building.image_top, class: 'main3__box__font-box__show__1__2'
+        .main3__box__font-box__show__1
+          = image_tag @room.image_plan, class: 'main3__box__font-box__show__1__2'
+        .main3__box__font-box__show__1
+          - @image.each do |image|
+            = image_tag image.image_sub, class: 'main3__box__font-box__show__1__2'
         -# .main3__box__font-box__show__1
         -#   = image_tag @list.image4, class: 'main3__box__font-box__show__1__2'
         -# .main3__box__font-box__show__1
@@ -45,10 +46,10 @@
         .main3__box__show-box__station__1
           駅徒歩
         .main3__box__show-box__station__2
-          -# = @station[0].route
-          -# = @station[0].station
-          駅 徒歩
-          -# = @station[0].walk
+          = @station[0].route
+          = @station[0].station
+          徒歩
+          = @station[0].walk
           分
       .main3__box__show-box__plan
         .main3__box__show-box__plan__1

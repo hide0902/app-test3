@@ -5,6 +5,7 @@ class TopsController < ApplicationController
 
   def show
     @room = Room.find(params[:id])
-    # @station = @room.stations
+    @station = @room.building.stations
+    @image = @room.images
   end
 end
