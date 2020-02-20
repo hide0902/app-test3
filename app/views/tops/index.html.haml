@@ -1,8 +1,86 @@
 .main
   = search_form_for @search, url: searches_path do |f|
     .main__1
-      = f.label :name_eq, "駅名"
-      = f.search_field :stations_station_eq
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+          天王寺
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '2', nil
+          寺田町
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '3', nil
+          桃谷
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '4', nil
+          鶴橋
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '5', nil
+          玉造
+    .main__1
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '6', nil
+          森ノ宮
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '7', nil
+          大阪城公園
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '8', nil
+          京橋
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '9', nil
+          桜宮
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '10', nil
+          天満
+    .main__1
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '11', nil
+          大阪
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '12', nil
+          福島
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '13', nil
+          野田
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '14', nil
+          西九条
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '15', nil
+          弁天町
+    .main__1
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '16', nil
+          大正
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '17', nil
+          芦原橋
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '18', nil
+          今宮
+      .main__1__2
+        %label
+          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '19', nil
+          新今宮
+    
     .main__2
       = f.select :rooms_rent_gteq, [ ["3万円以上",3], ["3.5万円以上",3.5], ["4万円以上",4], ["4.5万円以上",4.5], ["5万円以上",5], ["5.5万円以上",5.5], ["6万円以上",6], ["6.5万円以上",6.5], ["7万円以上",7], ["7.5万円以上",7.5] ], :include_blank => '指定なし'
       %p ~
