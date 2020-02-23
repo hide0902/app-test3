@@ -4,7 +4,7 @@
   .main2__box
     - @buildings.each do |building|
       .main2__box__box2
-        .main2__box__box2__font
+        .main2__box__box2__image-top
           = image_tag building.image_top
         .main2__box__box2__list
           .main2__box__box2__list__title
@@ -14,12 +14,14 @@
               = building.prefecture
               = building.city
               = building.number
-            .main2__box__box2__list__show__station
-              = building.stations[0].route
-              = building.stations[0].station
-              徒歩 
-              = building.stations[0].walk
-              分
+            .main2__box__box2__list__show__station-box
+              - building.stations .each do |station|
+                .main2__box__box2__list__show__station-box__station
+                  = station.route
+                  = station.station
+                  徒歩 
+                  = station.walk
+                  分
             .main2__box__box2__list__show__age
               築
               = building.age

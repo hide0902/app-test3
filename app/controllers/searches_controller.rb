@@ -1,8 +1,8 @@
 class SearchesController < ApplicationController
   def index
-    @search = Building.ransack(params[:q])
+    @search = Building.includes(:rooms, :stations).ransack(params[:q])
     @buildings = @search.result(distinct: true)
-    
+    @rooms = @buildings
   end
 
   def show
