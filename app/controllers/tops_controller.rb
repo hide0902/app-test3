@@ -1,5 +1,5 @@
 class TopsController < ApplicationController
   def index
-    @search = Building.ransack(params[:q])
+    @search = Building.includes(:rooms, :stations).ransack(params[:q])
   end
 end

@@ -1,0 +1,11 @@
+.main {
+  &__1 {
+    display: flex;
+    &__2 {
+      width: 150px;
+      label {
+        font-size: 20px;
+      }
+    }
+  }
+}
