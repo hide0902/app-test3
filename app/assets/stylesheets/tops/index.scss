@@ -1,10 +1,22 @@
 .main {
   &__1 {
     display: flex;
-    &__2 {
+    margin-bottom: 20px;
+    &__title {
       width: 150px;
-      label {
-        font-size: 20px;
+      font-size: 20px;
+    }
+    &__box {
+
+      &__2 {
+        display: flex;
+        &__3{
+          width: 150px;
+          label {
+            font-size: 20px;
+            
+          }
+        }
       }
     }
   }
