@@ -4,7 +4,7 @@
 
 .main2 {
   margin: auto;
-  background-image: image-url("DL00042.jpg");
+  background-image: image-url("IMG_7087.jpeg");
   height: 100vh;
   background-size:cover;
   &__title {
@@ -15,7 +15,7 @@
     
     &__box2 {
       display: flex;
-      background-color: #f5f5dc;
+      background-color:rgba(175, 168, 168, 0.8);
       margin: auto;
       width: 1100px;
       margin-bottom: 20px;
@@ -50,7 +50,7 @@
         }
         &__room-box {
           // display: flex;
-          background-color: white;
+          background-color:rgba(226, 217, 217, 0.9);
           height: 150px;
           width: 900px;
           overflow: scroll;
