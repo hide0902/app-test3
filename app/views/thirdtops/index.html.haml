@@ -1,6 +1,7 @@
 .main
   .main__box
     = search_form_for @search, url: searches_path, class: 'main__box__search' do |f|
+      %h1 大阪府 - 市区群を選択
       .main__box__search__1
         .main__box__search__1__title
           大阪市
@@ -234,6 +235,7 @@
             %label
               = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '泉南市', nil
               泉南市
+      %h1 その他の条件を指定
 
       .main__box__search__2
         .main__box__search__2__title
@@ -327,29 +329,42 @@
           築年数
         .main__box__search__5__box
           = f.select :age_lteq, [ ["新築",0], ["1年以内",1], ["3年以内",3], ["5年以内",5], ["7年以内",7], ["10年以内",10], ["15年以内",15], ["20年以内",20], ["25年以内",25], ["30年以内",30] ], :include_blank => '指定なし'
-          -# = f.radio_button :age_lteq, '', {:checked => true}
-          -# 指定なし
-          -# = f.radio_button :age_lteq, 0
-          -# 新築
-          -# = f.radio_button :age_lteq, 1
-          -# 1年以内
-          -# = f.radio_button :age_lteq, 3
-          -# 3年以内
-          -# = f.radio_button :age_lteq, 5
-          -# 5年以内
-          -# = f.radio_button :age_lteq, 7
-          -# 7年以内
-          -# = f.radio_button :age_lteq, 10
-          -# 10年以内
-          -# = f.radio_button :age_lteq, 15
-          -# 15年以内
-          -# = f.radio_button :age_lteq, 20
-          -# 20年以内
-          -# = f.radio_button :age_lteq, 25
-          -# 25年以内
-          -# = f.radio_button :age_lteq, 30
-          -# 30年以内
-        
-        
+          
+      .main__box__search__1
+        .main__box__search__1__title
+          人気のこだわり条件
+        .main__box__search__1__box
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              バス・トイレ別
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              駐車場あり
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              室内洗濯置場
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              エアコン付き
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              ペット相談可
+          .main__box__search__1__box__2
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              オートロック
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              洗面所独立
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              ネット無料
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              駐輪場あり
+            %label
+              = f.check_box :city_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              2階以上
       .main__box__search__sub
-        = f.submit "検索"
+        = f.submit "この条件で検索", class: 'main__box__search__sub__button'
