@@ -1,20 +1,42 @@
 .main {
-  &__1 {
-    display: flex;
-    margin-bottom: 20px;
-    &__title {
-      width: 150px;
-      font-size: 20px;
-    }
-    &__box {
+  background-image: image-url("94830a69c40ace34d9dfdfb948a42f9f.jpg");
+    &__box{
+      background-color:rgba(255,255,255,0.7);
+      height: 150vh;
+      width: 950px;
+      margin: auto;
+      padding: 0 30px;
+      &__search {
+        &__1 {
+          display: flex;
+          margin-bottom: 20px;
+          &__title {
+            width: 150px;
+            font-size: 20px;
+          }
+          &__box {
 
+            &__2 {
+              display: flex;
+              margin: 5px;
+              label {
+                width: 150px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
       &__2 {
         display: flex;
-        &__3{
+        &__title {
           width: 150px;
-          label {
-            font-size: 20px;
-            
+          font-size: 20px;
+        }
+        &__box {
+          display: flex;
+          h1 {
+            margin: 0 10px;
+            font-size: 30px;
           }
         }
       }

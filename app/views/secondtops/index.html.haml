@@ -1,116 +1,224 @@
 .main
-  = search_form_for @search, url: searches_path do |f|
-    .main__1
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
-          天王寺
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '2', nil
-          寺田町
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '3', nil
-          桃谷
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '4', nil
-          鶴橋
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '5', nil
-          玉造
-    .main__1
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '6', nil
-          森ノ宮
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '7', nil
-          大阪城公園
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '8', nil
-          京橋
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '9', nil
-          桜宮
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '10', nil
-          天満
-    .main__1
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '11', nil
-          大阪
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '12', nil
-          福島
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '13', nil
-          野田
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '14', nil
-          西九条
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '15', nil
-          弁天町
-    .main__1
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '16', nil
-          大正
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '17', nil
-          芦原橋
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '18', nil
-          今宮
-      .main__1__2
-        %label
-          = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '19', nil
-          新今宮
+  = search_form_for @search, url: searches_path, class: 'main__search' do |f|
+    .main__search__1
+      .main__search__1__title
+        JR大阪環状線
+      .main__search__1__box
+        .main__search__1__box__2
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
+              天王寺
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '2', nil
+              寺田町
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '3', nil
+              桃谷
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '4', nil
+              鶴橋
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '5', nil
+              玉造
+        .main__search__1__box__2
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '6', nil
+              森ノ宮
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '7', nil
+              大阪城公園
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '8', nil
+              京橋
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '9', nil
+              桜宮
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '10', nil
+              天満
+        .main__search__1__box__2
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '11', nil
+              大阪
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '12', nil
+              福島
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '13', nil
+              野田
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '14', nil
+              西九条
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '15', nil
+              弁天町
+        .main__search__1__box__2
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '16', nil
+              大正
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '17', nil
+              芦原橋
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '18', nil
+              今宮
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '19', nil
+              新今宮
+    .main__search__1
+      .main__search__1__title
+        OsakaMetro御堂筋線
+        %br
+        (北大阪急行南北線)
+      .main__search__1__box
+        .main__search__1__box__2
+          .mai__searchn__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '101', nil
+              千里中央
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '102', nil
+              桃山台
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '103', nil
+              緑地公園
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '104', nil
+              江坂
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '105', nil
+              東三国
+        .main__search__1__box__2
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '102', nil
+              新大阪
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '103', nil
+              西中島南方
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '104', nil
+              中津
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '105', nil
+              梅田
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '106', nil
+              淀屋橋
+        .main__search__1__box__2
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '107', nil
+              本町
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '108', nil
+              心斎橋
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '109', nil
+              なんば
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '110', nil
+              大国町
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '111', nil
+              動物園前
+        .main__search__1__box__2
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '112', nil
+              天王寺
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '113', nil
+              昭和町
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '114', nil
+              西田辺
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '115', nil
+              長居
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '116', nil
+              あびこ
+        .main__search__1__box__2
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '117', nil
+              北花田
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '118', nil
+              新金岡
+          .main__search__1__box__2__3
+            %label
+              = f.check_box :stations_station_in, {multiple: true, class: "detail_condition detail_checkbox"}, '119', nil
+              なかもず
+          
     
-    .main__2
+    .main__search__2
       = f.select :rooms_rent_gteq, [ ["3万円以上",3], ["3.5万円以上",3.5], ["4万円以上",4], ["4.5万円以上",4.5], ["5万円以上",5], ["5.5万円以上",5.5], ["6万円以上",6], ["6.5万円以上",6.5], ["7万円以上",7], ["7.5万円以上",7.5] ], :include_blank => '指定なし'
       %p ~
       = f.select :rooms_rent_lteq, [ ["3万円以下",3], ["3.5万円以下",3.5], ["4万円以下",4], ["4.5万円以下",4.5], ["5万円以下",5], ["5.5万円以下",5.5], ["6万円以下",6], ["6.5万円以下",6.5], ["7万円以下",7], ["7.5万円以下",7.5] ], :include_blank => '指定なし'
-    .main__3
+    .main__search__3
       = f.radio_button :city_eq, '', {:checked => true}
       指定なし
       = f.radio_button :city_eq, '大阪市天王寺区'
       天王寺区
       = f.radio_button :city_eq, '大阪市浪速区'
       浪速区
-    .main__4
+    .main__search__4
       = f.select :age_lteq, [ ["新築",0], ["1年以内",1], ["3年以内",3], ["5年以内",5], ["7年以内",7], ["10年以内",10], ["15年以内",15], ["20年以内",20], ["25年以内",25], ["30年以内",30] ], :include_blank => '指定なし'
-    .main__5
+    .main__search__5
       %label
         = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '1', nil
         ワンルーム
-    .main__5
+    .main__search__5
       %label
         = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '2', nil
         1K
-    .main__5
+    .main__search__5
       %label
         = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '3', nil
         1DK
-    .main__5
+    .main__search__5
       %label
         = f.check_box :rooms_plan_in, {multiple: true, class: "detail_condition detail_checkbox"}, '4', nil
         1LDK
 
       
-    .main__sub
+    .main__search__sub
       = f.submit "検索"
