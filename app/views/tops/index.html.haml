@@ -1,7 +1,11 @@
 .main-top
   .main-top__box
     .main-top__box__url-box
-      .main-top__box__url-box__1
-        = link_to '沿線から探す', secondtops_path
-      .main-top__box__url-box__2
-        = link_to '市区町村から探す', thirdtops_path
+      %h1
+        充実したお得で安心のサービスで
+        %br
+        快適な住まいをご提供します。
+      = link_to secondtops_path, class: "main-top__box__url-box__1" do
+        %p 駅から探す
+      = link_to thirdtops_path, class: "main-top__box__url-box__1" do
+        %p エリアから探す

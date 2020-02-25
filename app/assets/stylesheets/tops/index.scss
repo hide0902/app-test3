@@ -7,18 +7,29 @@
     width: 1000px;
     margin: auto;
     overflow: scroll;
-    justify-content: flex-start;
+    text-align: center;
     &__url-box {
-      display: flex;
-      &__1 {
-        width: 200px;
-        height: 60px;
-        padding-right: 10px;
-        background-color: rgba(157, 194, 72, 0.7);
+      margin-top: 270px;
+      h1 {
+        font-size: 50px;
+        color: white;
+        margin-bottom: 20px;
       }
-      &__2 {
-        width: 80px;
-        height: 60px;
+      &__1 {
+        border-radius: 40px;
+        width: 300px;
+        height: 100px;
+        background-color: rgba(48, 51, 56, 0.7);
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 5px;
+        font-size: 30px;
+        color: white;
+        
+        P {
+          margin-top: 27px;
+        
+        }
       }
     }
   }
